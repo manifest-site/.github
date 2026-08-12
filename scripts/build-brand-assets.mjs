@@ -7,6 +7,9 @@ const sharp = require('sharp');
 
 const mark = await fs.readFile(new URL('../assets/manifest-mark.svg', import.meta.url), 'utf8');
 const markPath = mark.match(/<path d="([^"]+)"/)[1];
+const approvedAvatar = await fs.readFile(
+  new URL('../assets/manifest-logo-approved.svg', import.meta.url),
+);
 
 const palette = {
   ink: '#0b1714',
@@ -14,16 +17,6 @@ const palette = {
   paper: '#f7f8f6',
   mint: '#d9efe6',
 };
-
-const avatar = `
-<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" fill="${palette.ink}"/>
-  <rect x="38" y="38" width="436" height="436" rx="62" fill="none" stroke="${palette.green}" stroke-width="4"/>
-  <g transform="translate(91 118) scale(11)" fill="${palette.paper}">
-    <path d="${markPath}"/>
-  </g>
-  <circle cx="418" cy="94" r="12" fill="${palette.green}"/>
-</svg>`;
 
 const banner = `
 <svg width="1600" height="520" viewBox="0 0 1600 520" xmlns="http://www.w3.org/2000/svg">
@@ -49,5 +42,9 @@ const banner = `
   </g>
 </svg>`;
 
-await sharp(Buffer.from(avatar)).png().toFile(fileURLToPath(new URL('../assets/manifest-sites-avatar.png', import.meta.url)));
+await sharp(approvedAvatar)
+  .flatten({ background: '#CBFFEE' })
+  .resize(512, 512)
+  .png()
+  .toFile(fileURLToPath(new URL('../assets/manifest-sites-avatar.png', import.meta.url)));
 await sharp(Buffer.from(banner)).png().toFile(fileURLToPath(new URL('../assets/manifest-sites-banner.png', import.meta.url)));

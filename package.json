@@ -1,0 +1,14 @@
+{
+  "name": "@manifest-sites/organization-profile",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-brand-assets.mjs",
+    "verify": "node scripts/verify-brand-assets.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.3"
+  },
+  "packageManager": "pnpm@10.15.1"
+}
