@@ -1,6 +1,6 @@
 # Manifest logo variations
 
-This is the source-traceable working media kit for Manifest and Manifest Sites branding. It keeps the current GitHub organization avatar unchanged while making the known logo family easy to compare.
+This is the source-traceable working media kit for Manifest and Manifest Sites branding.
 
 ![Manifest logo variation board](./manifest-logo-variations.png)
 
@@ -8,12 +8,12 @@ This is the source-traceable working media kit for Manifest and Manifest Sites b
 
 | Variation | Standing | Source |
 | --- | --- | --- |
-| Mint square | Approved; current GitHub avatar | Approved opaque export supplied during the GitHub branding work |
+| Mint square | Approved; previous GitHub avatar | Approved opaque export supplied during the GitHub branding work |
 | Glyph on light | Production | `apps/manifest-sites/public/brand/glyph-on-light.svg` |
 | Glyph on dark | Production | `apps/manifest-sites/public/brand/glyph-on-dark.svg` |
 | Canonical mark | Canonical | Byte-for-byte source from `apps/client/public/icon.svg`, surfaced by the Sites app as `manifest.svg` |
 | Transparent black mark | Approved export | Prior GitHub branding export; retained for flexible placements, not recommended as the avatar |
-| Teal + mint favicon | Recovered | Prior design-system/session export |
+| Teal + mint favicon | Selected; current GitHub avatar | Prior design-system/session export, selected for the organization identity |
 | Rainbow mark | Experimental | Prior design-system/session export; not approved for the core identity |
 | Manifest Sites lockups | Production composition | The live marketing/demo shell combines the production glyph with an HTML `Manifest Sites` word treatment |
 

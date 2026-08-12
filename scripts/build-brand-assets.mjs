@@ -7,8 +7,8 @@ const sharp = require('sharp');
 
 const mark = await fs.readFile(new URL('../assets/manifest-mark.svg', import.meta.url), 'utf8');
 const markPath = mark.match(/<path d="([^"]+)"/)[1];
-const approvedAvatar = await fs.readFile(
-  new URL('../assets/manifest-logo-approved.svg', import.meta.url),
+const selectedAvatar = await fs.readFile(
+  new URL('../brand-kit/sources/teal-mint-favicon.svg', import.meta.url),
 );
 
 const palette = {
@@ -42,8 +42,8 @@ const banner = `
   </g>
 </svg>`;
 
-await sharp(approvedAvatar)
-  .flatten({ background: '#CBFFEE' })
+await sharp(selectedAvatar)
+  .flatten({ background: '#F8FBF9' })
   .resize(512, 512)
   .png()
   .toFile(fileURLToPath(new URL('../assets/manifest-sites-avatar.png', import.meta.url)));
