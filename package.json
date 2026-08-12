@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-brand-assets.mjs",
+    "build:kit": "node scripts/build-logo-kit.mjs",
     "verify": "node scripts/verify-brand-assets.mjs"
   },
   "devDependencies": {
