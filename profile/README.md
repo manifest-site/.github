@@ -30,9 +30,3 @@ Manifest Sites turns the website an operator already has into a modern experienc
 ### What lives here
 
 This organization hosts the delivery infrastructure and generated sites behind Manifest Sites. Customer work remains private by default; public resources and community material will appear here as they are ready.
-
-<br>
-
-<p align="center">
-  <sub>Manifest Sites is an <a href="https://anyres.com">AnyRes</a> product.</sub>
-</p>
