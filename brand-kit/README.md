@@ -12,4 +12,6 @@ The approved source is `packages/brand-showcase/canonical-assets.json` in `manif
 
 The design system distinguishes the logo green from UI teal `#20B58B`, mint `#99FED6`, ink `#0A0A0A` and white surfaces. Stage colors describe work states; the Analyze color is not the universal corporate logo default. GitHub controls profile fonts and interface colors, so the profile uses native headings, paragraphs and links around the theme-aware logo.
 
-Run `pnpm build` for the PNG export and `pnpm verify` for SVG identity, dimensions, PNG opacity and profile reference checks. Updating these files does not change the GitHub organization avatar setting.
+The [avatar export settings](avatar-export.json) preserve the canonical square tile and all logo paths/masks/colors. The owner-requested PNG uses a transparent exterior and a centered glyph at 1.5 times the canonical avatar placement scale. Only the outer glyph transform changes for the PNG export; canonical SVGs remain byte-identical. White logo strokes remain opaque.
+
+Run `pnpm build` for the PNG export and `pnpm verify` for SVG identity, dimensions, PNG alpha/centering and profile reference checks. Updating these files does not change the GitHub organization avatar setting.
