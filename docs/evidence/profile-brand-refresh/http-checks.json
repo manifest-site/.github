@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://manifest.site",
+    "status": 200,
+    "finalUrl": "https://manifest.site"
+  },
+  {
+    "url": "https://github.com/orgs/manifest-site/discussions",
+    "status": 200,
+    "finalUrl": "https://github.com/orgs/manifest-site/discussions"
+  },
+  {
+    "url": "https://manifest.site/coming-soon/",
+    "status": 200,
+    "finalUrl": "https://manifest.site/coming-soon/"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/manifest-site/.github/chore/refresh-manifest-sites-brand/assets/manifest-sites-mark.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "sha256": "1cb3db5050413989b34aa7e295079839fe25ac31018a3874e8048934391284a0",
+    "matchesLocal": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/manifest-site/.github/chore/refresh-manifest-sites-brand/assets/manifest-sites-mark-on-dark.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "sha256": "793cfa68c2f67b50252f7824b0e15d4c7da3bdd6fd372340960f7045d4fc1ff3",
+    "matchesLocal": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/manifest-site/.github/chore/refresh-manifest-sites-brand/assets/manifest-sites-avatar.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "sha256": "f7cd1abe6e5d1fb8c164e4ac98f52b687defd153c118b0b1d955f7f40382204f",
+    "matchesLocal": true
+  }
+]

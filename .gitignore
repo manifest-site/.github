@@ -1,2 +1,4 @@
 node_modules/
 .agent-scratch/
+.playwright-cli/
+output/
