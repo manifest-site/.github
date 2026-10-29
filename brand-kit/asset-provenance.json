@@ -1,0 +1,11 @@
+{
+  "version": "A2.1",
+  "sourceRepository": "manifest-site-dev/manifest-sites-brand-kit",
+  "sourceCommit": "e6d99efef37ab3b5b25786461dafe24b5969425a",
+  "sourcePath": "packages/brand-showcase/canonical-assets.json",
+  "sha256": {
+    "manifest-sites-mark.svg": "1cb3db5050413989b34aa7e295079839fe25ac31018a3874e8048934391284a0",
+    "manifest-sites-avatar.svg": "f7cd1abe6e5d1fb8c164e4ac98f52b687defd153c118b0b1d955f7f40382204f",
+    "manifest-sites-mark-on-dark.svg": "793cfa68c2f67b50252f7824b0e15d4c7da3bdd6fd372340960f7045d4fc1ff3"
+  }
+}

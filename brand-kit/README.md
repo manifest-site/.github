@@ -1,24 +1,15 @@
-# Manifest logo variations
+# Manifest Sites brand assets
 
-This is the source-traceable working media kit for Manifest and Manifest Sites branding.
+The current identity is **A2.1**: a site-layout mark with an inner cursor and the original spark/edge. These are exact canonical exports, not traced artwork.
 
-![Manifest logo variation board](./manifest-logo-variations.png)
-
-## Classification
-
-| Variation | Standing | Source |
+| Asset | Use | Preview |
 | --- | --- | --- |
-| Mint square | Approved; previous GitHub avatar | Approved opaque export supplied during the GitHub branding work |
-| Glyph on light | Production | `apps/manifest-sites/public/brand/glyph-on-light.svg` |
-| Glyph on dark | Production | `apps/manifest-sites/public/brand/glyph-on-dark.svg` |
-| Canonical mark | Canonical | Byte-for-byte source from `apps/client/public/icon.svg`, surfaced by the Sites app as `manifest.svg` |
-| Transparent black mark | Approved export | Prior GitHub branding export; retained for flexible placements, not recommended as the avatar |
-| Teal + mint favicon | Selected; current GitHub avatar | Prior design-system/session export, selected for the organization identity |
-| Rainbow mark | Experimental | Prior design-system/session export; not approved for the core identity |
-| Manifest Sites lockups | Production composition | The live marketing/demo shell combines the production glyph with an HTML `Manifest Sites` word treatment |
+| [Light-background mark](../assets/manifest-sites-mark.svg) | Canonical logo green `#009163` | <img src="../assets/manifest-sites-mark.svg" alt="Manifest Sites A2.1 light-background mark" width="72" height="72"> |
+| [Dark-background mark](../assets/manifest-sites-mark-on-dark.svg) | Canonical logo green with the mint `#CBFFEE` cursor | <img src="../assets/manifest-sites-mark-on-dark.svg" alt="Manifest Sites A2.1 dark-background mark" width="72" height="72"> |
+| [Square export](../assets/manifest-sites-avatar.svg) | White mark on logo green | <img src="../assets/manifest-sites-avatar.svg" alt="Manifest Sites A2.1 square export" width="72" height="72"> |
 
-The previous design-system session also listed standalone `wordmark.svg`, `wordmark-sites.svg`, and `lockup.svg` artifacts. Their actual vector bytes were not present in the retained transcript or local worktrees, so they are documented as historical evidence but deliberately not reconstructed or approximated here.
+The approved source is `packages/brand-showcase/canonical-assets.json` in `manifest-site-dev/manifest-sites-brand-kit`, pinned to merged commit `e6d99efef37ab3b5b25786461dafe24b5969425a`. [Asset provenance](asset-provenance.json) records the exact checksums. Only the three standalone logo exports are copied here; no application mockups or internal review media are included.
 
-## Rebuild
+The design system distinguishes the logo green from UI teal `#20B58B`, mint `#99FED6`, ink `#0A0A0A` and white surfaces. Stage colors describe work states; the Analyze color is not the universal corporate logo default. GitHub controls profile fonts and interface colors, so the profile uses native headings, paragraphs and links around the theme-aware logo.
 
-Run `pnpm build:kit`. The board is generated from the exact SVG sources in `brand-kit/sources/` and the production Sites lockup treatment.
+Run `pnpm build` for the PNG export and `pnpm verify` for SVG identity, dimensions, PNG opacity and profile reference checks. Updating these files does not change the GitHub organization avatar setting.

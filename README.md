@@ -2,21 +2,22 @@
 
 This repository publishes the public profile and community surface for the Manifest Sites GitHub organization.
 
-- `profile/README.md` is rendered on the organization overview.
-- `assets/manifest-mark.svg` is a byte-identical copy of the canonical Manifest mark.
-- `assets/manifest-logo-approved.svg` is the approved mint rounded-square logo variation.
-- `assets/manifest-sites-avatar.png` is a non-transparent PNG rendered from that approved variation.
-- `assets/manifest-sites-banner.png` is the organization README banner.
-- `scripts/build-brand-assets.mjs` reproducibly builds the raster treatments from the canonical mark.
+- `profile/README.md` is rendered on the organization overview. Its absolute public asset URLs work from both the repository and organization profile after merge.
+- `assets/manifest-sites-mark.svg` is the canonical A2.1 site-layout and cursor logo for light backgrounds.
+- `assets/manifest-sites-mark-on-dark.svg` is its canonical dark-background variant.
+- `assets/manifest-sites-avatar.svg` is the canonical rounded-square export; `assets/manifest-sites-avatar.png` is its opaque 512 × 512 raster export. These files do not change the organization avatar setting.
+- `brand-kit/asset-provenance.json` pins the source version, commit, path and SHA-256 values. See [the asset guide](brand-kit/README.md).
 
-The canonical mark source is `apps/client/public/icon.svg` in the Manifest CMS repository. When the mark changes, replace `assets/manifest-mark.svg`, verify byte equivalence, review the approved square variation, and rebuild the raster assets.
+The organization is **Manifest Sites**. **Manifest Sites Harness** names the shared harness product; the former Manifest CMS name is deprecated. The profile uses GitHub-native typography and theme handling rather than a second custom design system.
 
 ## Brand asset workflow
 
 ```bash
-pnpm install
+pnpm install --frozen-lockfile
 pnpm build
 pnpm verify
 ```
 
-Commit the approved source variation, generated assets, and checksum update together so Git history records the complete branding decision.
+Copy canonical SVG strings exactly from the pinned brand-kit source; do not recreate paths, masks, colors or transforms. Update provenance and checksums together when an approved source changes. The light/dark mark choice is handled by a `picture` element, with a light-background fallback and accessible image text.
+
+The previous HQ mark, old mint/teal favicon and variation-board exports have been retired from this repository. Git history retains them; they are not the Manifest Sites A2.1 identity. No repository, CLI, infrastructure or organization settings are renamed here.

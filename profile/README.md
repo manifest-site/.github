@@ -1,6 +1,11 @@
 <p align="center">
-  <img src="../assets/manifest-sites-banner.png" alt="Manifest Sites — A clearer path to booking" width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/manifest-site/.github/main/assets/manifest-sites-mark-on-dark.svg">
+    <img src="https://raw.githubusercontent.com/manifest-site/.github/main/assets/manifest-sites-mark.svg" alt="Manifest Sites — site-layout mark with a cursor" width="96" height="96">
+  </picture>
 </p>
+
+<h1 align="center">Manifest Sites</h1>
 
 <p align="center">
   <strong>Modern, mobile-ready websites for tour and activity operators.</strong>
