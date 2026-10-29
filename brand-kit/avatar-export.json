@@ -1,0 +1,12 @@
+{
+  "source": "assets/manifest-sites-avatar.svg",
+  "output": "assets/manifest-sites-avatar.png",
+  "size": 512,
+  "format": "RGBA PNG",
+  "background": "transparent",
+  "canonicalOuterTransform": "translate(6.72 6.72) scale(0.72)",
+  "exportOuterTransform": "translate(-1.92 -1.92) scale(1.08)",
+  "glyphScaleRelativeToCanonicalAvatar": 1.5,
+  "tile": "Unchanged canonical 48 \u00d7 48 green tile, rx 10.5",
+  "geometry": "Canonical paths, masks, inner transform and colors unchanged; only the outer glyph placement changes for GitHub avatar framing."
+}
